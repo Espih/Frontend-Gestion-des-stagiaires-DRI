@@ -4,7 +4,9 @@ import Navbar from '../components/Navbar';
 
 const Apropos = () => {
   return (
+    
     <Box sx={{ backgroundColor: "#f5f7f7", minHeight: "100vh", py: 5 }}>
+        <Navbar />
       <Container maxWidth="md">
 
         <Paper elevation={3} sx={{ p: 4, borderTop: "6px solid #099488" }}>
