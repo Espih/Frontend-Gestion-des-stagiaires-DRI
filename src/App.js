@@ -10,6 +10,7 @@ import RendezVousPage from './pages/RendezVousPage';
 import Footer from './components/Footer';
 import "leaflet/dist/leaflet.css";
 import Navbar from './components/Navbar';
+import Apropos from "./pages/Apropos";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/rendezvous" element={<RendezVousPage />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/agent-dashboard" element={<AgentDashboard />} />
+        <Route path="/aproposPage" element={<Apropos />} />
 
         <Route
           path="/admin"

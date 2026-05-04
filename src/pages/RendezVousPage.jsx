@@ -13,7 +13,6 @@ const RendezVousPage = () => {
     const fetchMotifs = async () => {
       try {
         const res = await axios.get("http://localhost:5000/api/motifs");
-        // motifs contiennent libelle + agent_nom
         setMotifs(res.data);
       } catch (error) {
         console.error("Erreur lors du chargement :", error);

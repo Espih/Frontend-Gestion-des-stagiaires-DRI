@@ -84,7 +84,15 @@ const Navbar = () => {
           <Button component={Link} to="/" sx={{ color: location.pathname === '/' ? 'yellow' : 'white' }}>
             Accueil
           </Button>
-          <Button sx={{ color: 'white' }}>À propos</Button>
+          <Button
+            component={Link}
+            to="/about"
+            sx={{
+              color: location.pathname === '/aproposPage' ? 'yellow' : 'white'
+            }}
+          >
+            À propos
+          </Button>
 
           {!isLoggedIn && (
             <>
