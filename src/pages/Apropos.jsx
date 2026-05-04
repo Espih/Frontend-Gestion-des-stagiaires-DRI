@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Typography, Box, Paper, Divider } from "@mui/material";
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar.jsx';
 
 const Apropos = () => {
   return (
     
-    <Box sx={{ backgroundColor: "#f5f7f7", minHeight: "100vh", py: 5 }}>
-        <Navbar />
+    <Box sx={{ backgroundColor: "#f5f7f7", minHeight: "100vh" }}>
+        <Navbar/>
       <Container maxWidth="md">
 
         <Paper elevation={3} sx={{ p: 4, borderTop: "6px solid #099488" }}>
@@ -69,6 +69,7 @@ const Apropos = () => {
 
         {/* Footer simple */}
         <Typography variant="caption" display="block" align="center" sx={{ mt: 3, color: "gray" }}>
+          Contact dévéloppeur : esperencio.ranaivoson@gmail.com / +261 32 69 119 07 <br/>
           © Direction Régionale des Impôts Haute Matsiatra
         </Typography>
 
