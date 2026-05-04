@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Frontend-Gestion-des-stagiaires-DRI/static/css/main.a7575a4d.css",
-    "main.js": "/Frontend-Gestion-des-stagiaires-DRI/static/js/main.78993579.js",
+    "main.js": "/Frontend-Gestion-des-stagiaires-DRI/static/js/main.b406aa77.js",
     "static/js/453.670e15c7.chunk.js": "/Frontend-Gestion-des-stagiaires-DRI/static/js/453.670e15c7.chunk.js",
     "static/media/controlleur.jpeg": "/Frontend-Gestion-des-stagiaires-DRI/static/media/controlleur.6f82a6eeaa78a52adb44.jpeg",
     "static/media/inspecteur.jpg": "/Frontend-Gestion-des-stagiaires-DRI/static/media/inspecteur.de6176b98b2fe05dcf0a.jpg",
     "static/media/LDGI.png": "/Frontend-Gestion-des-stagiaires-DRI/static/media/LDGI.ce929262f73a27a0efe9.png",
     "index.html": "/Frontend-Gestion-des-stagiaires-DRI/index.html",
     "main.a7575a4d.css.map": "/Frontend-Gestion-des-stagiaires-DRI/static/css/main.a7575a4d.css.map",
-    "main.78993579.js.map": "/Frontend-Gestion-des-stagiaires-DRI/static/js/main.78993579.js.map",
+    "main.b406aa77.js.map": "/Frontend-Gestion-des-stagiaires-DRI/static/js/main.b406aa77.js.map",
     "453.670e15c7.chunk.js.map": "/Frontend-Gestion-des-stagiaires-DRI/static/js/453.670e15c7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a7575a4d.css",
-    "static/js/main.78993579.js"
+    "static/js/main.b406aa77.js"
   ]
 }
