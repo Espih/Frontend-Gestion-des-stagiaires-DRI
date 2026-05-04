@@ -1,0 +1,225 @@
+
+/* Styles généraux */
+.main-wrapper {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+/* Styles pour les icônes des cartes */
+.card-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.card-icon:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card-icon svg {
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+/* Styles pour les icônes des services */
+.service-icon-container {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.service-icon-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.service-icon-container svg {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+/* Animations d'apparition */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+/* Effets de survol */
+.card:hover {
+  animation: pulse 0.5s ease-in-out;
+}
+
+/* Effets de parallax pour la section hero */
+.hero-section {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Animations pour les éléments de navigation */
+.nav-item {
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  transform: translateY(-2px);
+}
+
+/* Effets de loading */
+.loading-container {
+  background: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Responsive design */
+@media (max-width: 960px) {
+  .hero-section {
+    padding: 3rem 1rem;
+  }
+  
+  .hero-section h3 {
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
+  }
+  
+  .hero-section h5 {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+  }
+  
+  .card-img {
+    height: 110px;
+    width: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+  
+  .hero-section h3 {
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+  }
+  
+  .hero-section h5 {
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+  }
+  
+  .service-card {
+    margin-bottom: 1rem;
+  }
+  
+  .card-img {
+    height: 90px;
+    width: 100%;
+  }
+  
+  .card-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .card-icon svg {
+    font-size: 0.9rem;
+  }
+  
+  .service-icon-container {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .service-icon-container svg {
+    font-size: 1.2rem;
+  }
+}
+
+/* Effets de transition pour les images */
+.card-img {
+  transition: all 0.3s ease;
+  filter: brightness(0.95);
+}
+
+.card:hover .card-img {
+  filter: brightness(1);
+}
+
+/* Styles pour les boutons interactifs */
+.interactive-button {
+  transition: all 0.3s ease;
+}
+
+.interactive-button:hover {
+  transform: scale(1.03);
+}
+
+/* Améliorations pour l'accessibilité */
+.focus-visible {
+  outline: 2px solid #2c3e50;
+  outline-offset: 2px;
+}
+
+/* Effets de glassmorphism pour les cartes */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Animation pour les sections */
+.section-title {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Effets de hover pour les cartes de service */
+.service-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #2c3e50;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover::after {
+  transform: translateX(0);
+}
+
+/* Effets de scroll smooth */
+html {
+  scroll-behavior: smooth;
+}
