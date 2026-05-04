@@ -86,7 +86,7 @@ const Navbar = () => {
           </Button>
           <Button
             component={Link}
-            to="/about"
+            to="/aproposPage"
             sx={{
               color: location.pathname === '/aproposPage' ? 'yellow' : 'white'
             }}

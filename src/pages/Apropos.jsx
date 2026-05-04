@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Typography, Box, Paper, Divider } from "@mui/material";
 import Navbar from '../components/Navbar';
 
-const AboutPage = () => {
+const Apropos = () => {
   return (
     <Box sx={{ backgroundColor: "#f5f7f7", minHeight: "100vh", py: 5 }}>
       <Container maxWidth="md">
